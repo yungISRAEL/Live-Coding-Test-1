@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Sheleadsafrica</title>
+    <style>
+        #btn {
+            padding: 20px 25px;
+            border-radius: 30px;
+            color: #4487DB;
+        }
+
+        #btn:hover {
+            background-color: #0087DB;
+            color: white;
+        }
+
+        #text-her {
+            margin-bottom: 200px;
+        }
+
+        #text-her h5 {
+            font-size: 2rem;
+            margin-right: 0;
+        }
+
+        #text-her button {
+            margin-right: 1150px;
+            padding: 15px 25px;
+            border-radius: 20px;
+        }
+
+        #text-the {
+            margin-bottom: 200px;
+        }
+
+        #text-the h5 {
+            font-size: 2rem;
+        }
+
+        #text-the button {
+            margin-right: 1100px;
+            padding: 15px 45px;
+            border-radius: 20px;
+        }
+
+        #text-spark {
+            margin-bottom: 200px;
+        }
+
+        #text-spark h5 {
+            font-size: 2rem;
+        }
+
+        #text-spark p {
+            margin-left: 0;
+        }
+
+        #text-spark button {
+            margin-right: 1000px;
+            padding: 15px 25px;
+            border-radius: 20px;
+        }
+
+        #background-image {
+            background-image: url(image/pattern-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        #btn1 {
+            border-radius: 20px;
+        }
+
+        #she {
+            max-width: 350px;
+        }
+
+        #head2 h2 {
+            font-size: 4rem;
+        }
+
+        #down button {
+            margin-bottom: 330px;
+            margin-left: 350px;
+            padding: 10px 20px;
+            max-width: 350px;
+        }
+
+        #down button a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #down button a:hover {
+            color: white;
+        }
+
+        #down img {
+            margin-left: 50px;
+        }
+
+        #card-container {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-left: 390px;
+            padding-right: 400px;
+        }
+
+        #start {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #start h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        #start button {
+            border-radius: 20px;
+            padding: 10px 35px;
+        }
+
+        #start button:hover {
+            background-color: white;
+            color: #5ACEFF;
+            border: 2px solid blue;
+        }
+
+        #ben {
+            border: 1px solid white;
+            background-color: #C0E7FF;
+            padding: 1px 10px;
+            border-radius: 20px;
+            width: 200px;
+            height: 30px;
+            color: #4487DB;
+        }
+
+        #cards {
+            padding-left: 400px;
+            padding-right: 400px;
+        }
+
+        #cards img {
+            width: 80px;
+        }
+
+        #cardd {
+            border-radius: 20px;
+            background-color: #EEEEEE;
+        }
+
+        #tv-container {
+            margin-right: 450px;
+            margin-top: 80px;
+            border: 2px solid #EEEEEE;
+            background-color: #EEEEEE;
+            margin-left: 400px;
+            padding: 20px;
+
+        }
+
+        #tv-container img {
+            width: 100px;
+            margin-left: 60px;
+        }
+
+        #tv-container p {
+            margin-left: 450px;
+            color: #0087DB;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        #set {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        #set img {
+            margin-left: 400px;
+        }
+
+        #sla {
+            width: 500px;
+            margin-right: 500px;
+        }
+
+        #sla button {
+            border-radius: 20px;
+        }
+
+        #the {
+            width: 500px;
+            margin-right: 400px;
+        }
+
+        #the button {
+            border-radius: 20px;
+        }
+
+        #slay {
+            width: 500px;
+            margin-right: 500px;
+        }
+
+        #slay button {
+            border-radius: 20px;
+        }
+
+        #alone {
+            margin-left: 350px;
+            margin-top: -80px;
+        }
+
+
+        @media (max-width: 992px) {
+
+
+            #navbar {
+                margin-left: 0;
+            }
+
+            #btn {
+                margin-right: 0;
+                width: 100%;
+            }
+
+
+            #text-her h5,
+            #text-the h5,
+            #text-spark h5 {
+                font-size: 1.5rem;
+                margin-right: 0;
+            }
+
+            #text-her button,
+            #text-the button,
+            #text-spark button {
+                margin-right: 0;
+            }
+
+
+            .carousel-item img {
+                height: 60vh;
+                object-fit: cover;
+            }
+
+
+            #background-image {
+                height: auto;
+                padding: 40px 20px;
+            }
+
+
+            #down {
+                text-align: center;
+            }
+
+            #down button {
+                margin: 20px auto;
+                display: block;
+            }
+
+            #down img {
+                width: 100%;
+                max-width: 500px;
+                margin: 20px auto;
+                display: block;
+            }
+
+
+            #card-container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #cards {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+
+            #tv-container {
+                margin: 20px;
+                text-align: center;
+            }
+
+            #tv-container p {
+                margin-left: 0;
+            }
+
+            #tv-container img {
+                width: 70px;
+                margin: 10px;
+            }
+
+
+            #set {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #set img {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            #sla,
+            #the,
+            #slay {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            /* FOOT TEXT */
+            #alone {
+                margin-left: 0;
+                text-align: center;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+
+            #text-her h5,
+            #text-the h5,
+            #text-spark h5 {
+                font-size: 1.2rem;
+            }
+
+            #head2 h2 {
+                font-size: 1.8rem;
+            }
+
+            #start {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            #cards {
+                display: block;
+            }
+
+            #cardd {
+                margin-bottom: 20px;
+            }
+
+            .carousel-item img {
+                height: 40vh;
+                object-fit: cover;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="navbar" class="container">
+            <a class="navbar-brand me-5" href="#"><img src="image/Logo (2).png" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown" href="#">Who We Are</a></li>
+                            <li><a class="dropdown-item" href="#">Our Journey</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Professional Services</a></li>
+                            <li><a class="dropdown-item" href="#">Products</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Past Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Current Programs</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Business Boost Lab</a></li>
+                            <li><a class="dropdown-item" href="#">Career Fair</a></li>
+                            <li><a class="dropdown-item" href="#">SLAY Festival</a></li>
+                            <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            <li><a class="dropdown-item" href="#">Partner Based Events</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Careers</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SLA Top 50Under30</a></li>
+                            <li><a class="dropdown-item" href="#">Contribute</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Resourses</a>
+                    </li>
+                </ul>
+
+                <button id="btn" class="btn btn-primary">Join Our Tribe</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="image/SLA-30-04-16-23.jpg" class="d-block w-100" alt="..." height="800px">
+                <div id="text-her" class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Empowering Her Future, One Skill at a Time. Join the BoostHer Program</h5>
+                    <p class="text-light">Through personalised coaching, skills-building training, and a supportive
+                        community, this program equips you with the tools and confidence to trive in your career and
+                        entrepreneurial ventures.</p>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="image/Participants-playing-a-networking-game.jpg" class="d-block w-100" alt="..."
+                    height="800px">
+                <div id="text-the" class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">The #1 destination for resourses and programs catering to smart and ambitious
+                        African woman</h5>
+                    <button class="btn btn-primary">See Our Programs</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/Helen-Gichohi-MD-of-Equity-Group-Foundation.jpg" class="d-block w-100" alt="..."
+                    height="800px">
+                <div id="text-spark" class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Spark and drive the potential of African woman. Sign Up for Our Newsletters.
+                    </h5>
+                    <p class="text-light">She leads Africa and has empowering newslatters that support you in making
+                        your dreams a reality!
+                        We have plenty of informative resources plus plenty of inspiring stories to motivate you on your
+                        journey. Sign up now and let's start turning our dreams into reality together!</p>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="background-image">
+        <div class="container">
+            <div class="row align-items-center">
+
+
+
+                <div id="she" class="col-lg-5 text-white">
+                    <p>
+                        She Leads Africa is a community of Young, Ambitious and Vibrant Women Across Africa Platforms
+                        celebrating innovation and business often feature networking opportunities that are as varied as
+                        digital options like au for online comparisons.
+                    </p>
+
+                    <button id="btn1" class="btn btn-light">
+                        Join Our Community →
+                    </button>
+                </div>
+
+
+
+                <div class="col-lg-7">
+                    <div id="head2" class="row text-white stats p-5">
+
+                        <div class="col-md-4">
+                            <h2>30k+</h2>
+                            <p>Live virtual event attendees from 2020 – 2022</p>
+                        </div>
+
+                        <div id="events" class="col-md-4">
+                            <h2>8k+</h2>
+                            <p>Physical event attendees for the SLAY Festival from 2017 – 2020</p>
+                        </div>
+
+                        <div id="scaled" class="col-md-4">
+                            <h2>120+</h2>
+                            <p>Entrepreneurs scaled up through the SLA accelerators program</p>
+                        </div>
+
+                        <div class="col-md-6 mt-4">
+                            <h2>50k</h2>
+                            <p>Entrepreneurs reached across Nigeria, Kenya and South Africa</p>
+                        </div>
+
+                        <div class="col-md-6 mt-4">
+                            <h2>200k</h2>
+                            <p>Impacted women globally and in Africa</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION2 -->
+    <div id="down" class="p-4">
+        <button class="btn btn-primary"><a href="#">Download the SLA 2015-2025 Impact Report
+                Here</a></button>
+        <img src="image/2015-2025-IMPACT-REPORT-rexzrcx5hwzztzthy7zcj1jh8q1jd7cumpqhlelme8.jpg" alt="image" width="px">
+    </div>
+
+    <!-- CARD -->
+    <div id="card-container">
+
+        <div id="ben">
+            <p>Benefits of joining SLA</p>
+        </div>
+        <div id="start">
+            <h2>Start living your best life</h2>
+            <button class="btn btn-primary">Join Our Tribe</button>
+        </div>
+    </div>
+
+
+    <div id="cards" class="card-group justify-content-space-between gap-3">
+        <div id="cardd" class="card bg-primary">
+            <img src="image/Group-41.png" class="card-img-top" alt="...">
+            <div id="card-text" class="card-body">
+                <h5 class="card-title">Reach Your Goals </h5>
+                <p class="card-text">
+                    We are committed to helping smart and ambitious young African women live their best lives</p>
+
+            </div>
+        </div>
+        <div id="cardd" class="card border border-1">
+            <img src="image/Group-42.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Get Promoted</h5>
+                <p class="card-text">We promote and uplift African talent by showcasing them to the world!
+                </p>
+
+            </div>
+        </div>
+        <div id="cardd" class="card border border-1">
+            <img src="image/Group-43.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Grow Your Network</h5>
+                <p class="card-text">We connect African women to each other through our ever-growing community</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="tv-container">
+        <p>Featured On</p>
+
+        <img src="image/cnn-main-min.png" alt="">
+        <img src="image/sahara-min.png" alt="">
+        <img src="image/cnbc-min.png" alt="">
+        <img src="image/howwemadeitinafrica-min.png" alt="">
+        <img src="image/ventures-1-min.png" alt="">
+        <img src="image/forbes-logo-png-4-1.png" alt="">
+    </div>
+
+    <div class="p-5">
+        <div id="set">
+            <img src="image/image-35.png" alt="" width="300px">
+
+            <div id="sla">
+                <h2>SLA Newsletters</h2>
+                <p>
+                    Our newsletters give you access to exclusive resources, career opportunities Track Dexair Sys and
+                    the motivation you need to help you achieve your goals.</p>
+                <button class="btn btn-dark text-primary">Join Our Newsletter</button>
+            </div>
+        </div>
+
+        <div id="set">
+            <img src="image/image-36.png" alt="" width="350px">
+
+            <div id="the">
+                <h2>SLA BoostHer Program</h2>
+                <p>
+                    The SLA BoostHer Program, in collaboration with Jobberman is a transformative initiative designed to
+                    empower young Nigerian women entrepreneurs. This program addresses the unique challenges faced by
+                    women in business <a href="#">read the full article</a> and job-seeking through a blended learning
+                    experience that
+                    includes advanced self-paced courses. Through a blended learning approach, participants will gain
+                    access to high-quality training, expert-led masterclasses, and hands-on guidance tailored to their
+                    needs, fostering sustainable business growth and economic independence.</p>
+                <button class="btn btn-dark text-primary">Apply Now</button>
+            </div>
+        </div>
+
+        <div id="set">
+            <img src="image/image-37.png" alt="" width="300px">
+
+            <div id="slay">
+                <h2>SLAY Festival</h2>
+                <p>
+                    SLAY Festival is a celebration of culture, innovation and business for African women. Learn from
+                    speakers, attend masterclasses, shop from women led businesses, have fun with your girls and meet
+                    other fab African women.</p>
+                <button class="btn btn-dark text-primary">View Past Events</button>
+            </div>
+        </div>
+    </div>
+    <p id="alone">Crystallum Lotemax Platform</p>
+
+    <div id="card-container">
+
+        <div id="ben">
+            <p>Upcoming Events</p>
+        </div>
+        <div id="start">
+            <h2>It’s happening!</h2>
+            <button class="btn btn-primary">View Upcoming Events</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
