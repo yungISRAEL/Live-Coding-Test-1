@@ -74,6 +74,10 @@
             margin-top: 20px;
         }
 
+        .carousel-item img {
+            filter: brightness(.5);
+        }
+
         #btn1 {
             border-radius: 20px;
         }
@@ -86,11 +90,19 @@
             font-size: 4rem;
         }
 
+        #down {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
         #down button {
-            margin-bottom: 330px;
-            margin-left: 350px;
+            margin: 0;
             padding: 10px 20px;
             max-width: 350px;
+            align-self: flex-start;
         }
 
         #down button a {
@@ -103,7 +115,9 @@
         }
 
         #down img {
-            margin-left: 50px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0;
         }
 
         #card-container {
@@ -175,7 +189,8 @@
         }
 
         #tv-container p {
-            margin-left: 450px;
+            margin: 0 auto 15px;
+            text-align: center;
             color: #0087DB;
             font-weight: bold;
             font-size: 1.5rem;
@@ -265,18 +280,23 @@
 
 
             #down {
-                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
             }
 
             #down button {
-                margin: 20px auto;
-                display: block;
+                margin: 0;
+                display: inline-block;
             }
 
             #down img {
                 width: 100%;
                 max-width: 500px;
-                margin: 20px auto;
+                margin: 0;
                 display: block;
             }
 
@@ -332,12 +352,81 @@
 
         }
 
+       
+        @media (max-width: 1440px) and (min-width: 993px) {
+            #card-container, #cards {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #tv-container {
+                margin: 20px;
+                padding: 15px;
+                text-align: center;
+            }
+
+            #text-her h5,
+            #text-the h5,
+            #text-spark h5 {
+                font-size: 1.9rem;
+            }
+
+            #text-her button,
+            #text-the button,
+            #text-spark button {
+                margin-right: 0;
+            }
+
+            #set {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            #set img {
+                margin: 0;
+                width: auto;
+            }
+
+            #sla,
+            #the,
+            #slay {
+                width: 100%;
+                max-width: 420px;
+                margin: 0;
+            }
+
+            #background-image {
+                height: auto;
+                padding: 40px 20px;
+            }
+        }
+
         @media (max-width: 576px) {
+
+            #down {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #down button {
+                display: block;
+                margin: 20px auto;
+            }
+
+            #down img {
+                width: 100%;
+                max-width: 500px;
+                margin: 20px auto;
+            }
 
             #text-her h5,
             #text-the h5,
             #text-spark h5 {
                 font-size: 1.2rem;
+                max-width: 400px;
+                text-align: center;
             }
 
             #head2 h2 {
@@ -359,8 +448,20 @@
             }
 
             .carousel-item img {
-                height: 40vh;
+                height: 70vh;
                 object-fit: cover;
+            }
+
+            .carousel-caption {
+                bottom: -30%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, 0);
+                margin-bottom: 0;
+                width: 90%;
+                max-width: 480px;
+                text-align: center;
+                padding: 10px;
             }
 
         }
@@ -469,7 +570,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
                 <img src="image/SLA-30-04-16-23.jpg" class="d-block w-100" alt="..." height="800px">
-                <div id="text-her" class="carousel-caption d-none d-md-block">
+                <div id="text-her" class="carousel-caption d-block">
                     <h5 class="text-light">Empowering Her Future, One Skill at a Time. Join the BoostHer Program</h5>
                     <p class="text-light">Through personalised coaching, skills-building training, and a supportive
                         community, this program equips you with the tools and confidence to trive in your career and
@@ -481,7 +582,7 @@
             <div class="carousel-item" data-bs-interval="2000">
                 <img src="image/Participants-playing-a-networking-game.jpg" class="d-block w-100" alt="..."
                     height="800px">
-                <div id="text-the" class="carousel-caption d-none d-md-block">
+                <div id="text-the" class="carousel-caption d-block">
                     <h5 class="text-light">The #1 destination for resourses and programs catering to smart and ambitious
                         African woman</h5>
                     <button class="btn btn-primary">See Our Programs</button>
@@ -490,7 +591,7 @@
             <div class="carousel-item">
                 <img src="image/Helen-Gichohi-MD-of-Equity-Group-Foundation.jpg" class="d-block w-100" alt="..."
                     height="800px">
-                <div id="text-spark" class="carousel-caption d-none d-md-block">
+                <div id="text-spark" class="carousel-caption d-block">
                     <h5 class="text-light">Spark and drive the potential of African woman. Sign Up for Our Newsletters.
                     </h5>
                     <p class="text-light">She leads Africa and has empowering newslatters that support you in making
