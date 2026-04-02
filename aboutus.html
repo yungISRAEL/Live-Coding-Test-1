@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Who We Are</title>
+    <style>
+        #btn {
+            padding: 20px 25px;
+            border-radius: 30px;
+            color: #4487DB;
+        }
+
+        #btn:hover {
+            background-color: #0087DB;
+            color: white;
+        }
+
+        #background-image {
+            background-image: url(image/leighann-blackwood-hx87JWG4yCI-unsplash-1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+        }
+
+        #who-text {
+            color: white;
+            padding-left: 380px;
+            padding-top: 350px;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        #flex-container {
+            padding-left: 400px;
+            padding-top: 150px;
+        }
+
+        #community {
+            width: 500px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+
+        #community h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        #join-btn {
+            border-radius: 20px;
+            padding: 5px 25px;
+            color: #0087DB;
+            margin-top: 20px;
+        }
+
+        #join-btn:hover {
+            color: white;
+        }
+
+        #blue-background {
+            background-image: url(image/pattern-bg\ \(1\).jpg);
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+            margin-top: 80px;
+        }
+
+        #start-f {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #about-container {
+            padding-left: 400px;
+            padding-right: 450px;
+            padding-top: 100px;
+        }
+
+        #about {
+            border: 1px solid lightblue;
+            color: #0087DB;
+            background-color: #C0E7FF;
+            width: 180px;
+            height: 25px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        #start-f h2 {
+            color: #EEEEEE;
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        #start-f button {
+            padding: 10px 35px;
+            background-color: white;
+            color: #0087DB;
+            border-radius: 25px;
+        }
+
+        #start-f button:hover {
+            border: 2px solid white;
+            background-color: #4487DB;
+            color: #C0E7FF;
+        }
+
+        #carddd {
+            padding-left: 350px;
+            margin-top: 20px;
+        }
+
+        #card3 {
+            padding-left: 350px;
+        }
+
+        #cc1 {
+            background-color: #0086DB;
+            border: 1px solid #0086DB;
+        }
+
+        #meet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #EEEEEE;
+            width: 600px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 100px;
+            background-color: #EEEEEE;
+            border-radius: 30px;
+            margin-right: 100px;
+            height: 60px;
+
+        }
+
+        #backg {
+            padding-left: 700px;
+            padding-right: 800px;
+            margin-top: 50px;
+        }
+
+        #our {
+            border: 1px solid #0087DB;
+            margin-top: 10px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: #0087DB;
+            color: #C0E7FF;
+        }
+
+        #thet p {
+            margin-top: 10px;
+            color: #0086DB;
+        }
+
+        #big {
+            padding-left: 550px;
+            padding-right: 400px;
+            margin-top: 25px;
+        }
+
+        #big-f {
+            display: flex;
+        }
+
+        #yasmin {
+            margin-top: 150px;
+            margin-left: 30px;
+        }
+
+        #yasmin h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        #big2-f h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        #big2-f p {
+            margin-right: 30px;
+        }
+
+        #big2 {
+            padding-left: 550px;
+            padding-right: 450px;
+            margin-top: 40px;
+        }
+
+        #big2-f {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #footer-bg {
+            background-color: black;
+            height: 400px;
+            margin-top: 80px;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding-left: 200px;
+        }
+
+        #grid-container a {
+            color: #D9D9D9;
+            text-decoration: none;
+        }
+
+        #grid-container h5 {
+            font-weight: bold;
+        }
+
+        #grid-container p {
+            font-weight: bold;
+        }
+
+        #conta {
+            padding-left: 250px;
+            padding-right: 300px;
+            padding-top: 80px;
+        }
+
+        #with img{
+            margin-bottom: 100px;
+            margin-right: 200px;
+            padding-top: 15px;
+        }
+
+        #flex-container img {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        #big-f img,
+        #big2-f img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+       
+        @media (max-width: 991px) {
+            #background-image {
+                height: 400px;
+            }
+
+            #blue-background {
+                height: auto;
+            }
+
+            #cc1 {
+                max-width: 100%;
+            }
+            #who-text {
+                padding-left: 20px;
+                padding-top: 200px;
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            #flex-container {
+                padding-left: 20px;
+                padding-top: 50px;
+                text-align: center;
+            }
+
+            #flex-container .d-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #community {
+                width: 100%;
+                max-width: 500px;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+
+            #community h2 {
+                font-size: 2rem;
+            }
+
+            #about-container {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            #start-f {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            #carddd {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #meet {
+                width: 100%;
+                max-width: 600px;
+                margin-right: 0;
+                margin: 0 auto;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #backg {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            #big {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            #big-f {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #big-f img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            #yasmin {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+
+            #yasmin h2 {
+                font-size: 2rem;
+            }
+
+            #big2 {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            #big2-f {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            #big2-f img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            #big2-f h2 {
+                font-size: 2rem;
+            }
+
+            #grid-container {
+                padding-left: 20px;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            #conta {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #leads {
+                padding-left: 0;
+            }
+
+            #footer-bg {
+                height: auto;
+                padding-bottom: 20px;
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            #carddd {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        
+        @media (max-width: 576px) {
+            #background-image {
+                height: 300px;
+            }
+
+            #btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            #who-text {
+                font-size: 2rem;
+                padding-top: 150px;
+            }
+
+            #community h2 {
+                font-size: 1.8rem;
+            }
+
+            #start-f h2 {
+                font-size: 2rem;
+            }
+
+            #yasmin h2,
+            #big2-f h2 {
+                font-size: 1.8rem;
+            }
+
+            #grid-container {
+                grid-template-columns: 1fr;
+                padding-left: 10px;
+            }
+
+            #with img {
+                margin-right: 0;
+                text-align: center;
+            }
+
+            #conta {
+                padding-top: 40px;
+            }
+        }
+
+        
+        @media (min-width: 1441px) {
+            
+            #grid-container {
+                padding-left: 200px;
+            }
+
+            #conta {
+                padding-left: 250px;
+                padding-right: 300px;
+            }
+
+            #leads {
+                padding-left: 250px;
+            }
+        }
+
+        
+        @media (max-width: 1440px) and (min-width: 993px) {
+            #about-container {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            #carddd {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            #cc1 {
+                max-width: 1200px;
+            }
+
+            #backg {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            #big,
+            #big2 {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            #grid-container {
+                padding-left: 50px;
+            }
+
+            #conta {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            #leads {
+                padding-left: 50px;
+            }
+
+            #flex-container {
+                padding-left: 50px;
+            }
+
+            #who-text {
+                padding-left: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-light">
+        <div id="navbar" class="container">
+            <a class="navbar-brand me-5" href="#"><img src="image/Logo (2).png" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item dropdown" href="#">Who We Are</a></li>
+                            <li><a class="dropdown-item" href="#">Our Journey</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Professional Services</a></li>
+                            <li><a class="dropdown-item" href="#">Products</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Past Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Current Programs</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Business Boost Lab</a></li>
+                            <li><a class="dropdown-item" href="#">Career Fair</a></li>
+                            <li><a class="dropdown-item" href="#">SLAY Festival</a></li>
+                            <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            <li><a class="dropdown-item" href="#">Partner Based Events</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Careers</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SLA Top 50Under30</a></li>
+                            <li><a class="dropdown-item" href="#">Contribute</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Resourses</a>
+                    </li>
+                </ul>
+
+                <button id="btn" class="btn btn-primary">Join Our Tribe</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="background-image">
+        <h2 id="who-text">Who We Are</h2>
+    </div>
+
+    <div id="flex-container">
+        <div class="d-flex">
+            <img src="image/Group-58.png" alt="" width="450px">
+            <div id="community" class="ms-5">
+                <h2>The #1 Community for African Women</h2>
+                <p>She Leads Africa is a platform that gives women the community, information and inspiration they need
+                    to live the lives of their dreams.</p>
+                <button id="join-btn" class="btn btn-primary">Join Us</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="blue-background">
+
+        <div id="about-container">
+
+            <div id="about">
+                <p>About SLA</p>
+            </div>
+            <div id="start-f">
+                <h2>Everything SLA</h2>
+                <button class="btn btn-primary">Join Now</button>
+            </div>
+        </div>
+
+        <div id="carddd" class="d-flex gap-5">
+            <div id="cc1" class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="image/Group-59.png" class="img-fluid rounded-start ms-5" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">Our Community</h5>
+                            <p class="card-text">She Leads Africa is a platform that gives women the community,
+                                information and inspiration they need to live the lives of their dreams. There are 5
+                                ways we can help you build the life you’ve always wanted:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cc1" class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="image/Group-242.png" class="img-fluid rounded-start ms-5" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">Our Events</h5>
+                            <p class="card-text">We host digital and real-life events throughout the year to help you
+                                relax, build your career, grow your business and reach your financial goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cc1" class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="image/Group-246.png" class="img-fluid rounded-start ms-5" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-light">
+                            <h5 class="card-title">Our Resources</h5>
+                            <p class="card-text">We publish articles, newsletters, podcasts and videos to help you
+                                start, grow and improve your business and career</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="backg">
+
+        <div id="meet"">
+            <p id="our">Meet Our Chief Slay Queens</p>
+            <div id="thet">
+                <p>The Team</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="big">
+
+        <div id="big-f">
+            <img src="image/image-16.png" alt="image" width="400px">
+            <div id="yasmin">
+                <h2>Yasmin Belo-Osagie</h2>
+                <p>Yasmin Belo-Osagie aka Dj Yasbo is a cofounder of She Leads Africa. Before She Leads Africa, she
+                    worked as a management consultant with McKinsey and Co. She has a BA from Princeton University, a JD
+                    from Harvard Law School and an MBA from Stanford Business School.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="big2">
+
+        <div id="big2-f">
+            <div>
+                <h2>Afua Osei</h2>
+                <p>Afua Osei aka DJ Fufu is a cofounder of She Leads Africa. Before She Leads Africa, she worked as a
+                    management consultant with McKinsey and Co. Afua completed an MBA and an MPA at University of
+                    Chicago studied international management at the London School of Economics, and graduated cum laude
+                    from Allegheny College.</p>
+            </div>
+            <img src="image/image-17.png" alt="image" width="400px">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-bg">
+        <div id="conta">
+
+            <div id="grid-container">
+
+                <div id="with" class="text-light">
+                    <img src="image/SLA_Logo_White@2x (1).png" alt="">
+                    <h5>Get Interactive with Us</h5>
+                </div>
+
+                <div class="text-light">
+                    <h5>She Leads Africa</h5>
+                    <p><a href="">Home</a></p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">Careers</a></p>
+                </div>
+
+                <div class="text-light">
+                    <h5>Resources</h5>
+                    <p><a href="">Advice</a></p>
+                    <p><a href="">Guide</a></p>
+                    <p>SLAY Festival</p>
+                </div>
+
+                <div class="text-light">
+                    <h5>Discover</h5>
+                    <p>MMI</p>
+                    <p>SMB</p>
+                    <p>HGCP</p>
+                    <p>Contribute</p>
+                </div>
+
+                <div class="text-light">
+                    <h5>Want to do <br>business with us?</h5>
+                    <h6>Email us at info@sheleadsafrica.org</h6>
+                </div>
+            </div>
+
+            <div id="leads"><p>© 2024 SHE LEADS AFRICA, All Rights Reserved.</p></div>
+
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
