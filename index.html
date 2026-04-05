@@ -243,11 +243,10 @@
 
 
 
-        
+
         #footer-bg {
             background-color: black;
             height: 400px;
-            margin-top: 80px;
         }
 
         #grid-container {
@@ -275,7 +274,7 @@
             padding-top: 80px;
         }
 
-        #with img{
+        #with img {
             margin-bottom: 100px;
             margin-right: 200px;
             padding-top: 15px;
@@ -288,6 +287,74 @@
             padding-left: 250px;
         }
 
+        #twoimg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #two-container {
+            padding-left: 400px;
+            padding-right: 400px;
+            margin-top: 40px;
+        }
+
+        #last-bg {
+            background-image: url(image/pattern.png);
+            background-position: center;
+            background-size: cover;
+            background-color: #0087DB;
+            height: 450px;
+            margin-top: 80px;
+        }
+
+        #last-container {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #last-text p {
+            border: 1px solid #C0E7FF;
+            background-color: #C0E7FF;
+            max-width: 300px;
+            margin-left: 800px;
+            border-radius: 20px;
+            color: #0087DB;
+        }
+
+        #last-text h3 {
+            color: #C0E7FF;
+            width: 500px;
+            text-align: center;
+            margin-left: 700px;
+            font-size: 2rem;
+        }
+
+        #last-in {
+            display: flex;
+            align-items: center;
+            padding-left: 700px;
+        }
+
+        #last-in input {
+            border: none;
+            border-radius: 20px;
+            padding: 10px 150px;
+        }
+
+        
+        #last-in button {
+            border-radius: 20px;
+            padding: 10px 25px;
+            background-color: #0087DB;
+            color: #C0E7FF;
+            border: none;
+        }
+
+        #last-in button:hover {
+            background-color: #C0E7FF;
+            color: black;
+        }
 
         @media (max-width: 992px) {
 
@@ -401,9 +468,11 @@
 
         }
 
-       
+
         @media (max-width: 1440px) and (min-width: 993px) {
-            #card-container, #cards {
+
+            #card-container,
+            #cards {
                 padding-left: 20px;
                 padding-right: 20px;
             }
@@ -833,6 +902,37 @@
     </div>
 
 
+    <div id="two-container">
+        <div id="twoimg">
+            <div>
+                <img src="image/Rectangle-3352-1-1024x444.png" alt="" width="500px">
+                <h4 class="mt-3"><a href="#">SLA BOOSTHER PROGRAM</a></h4>
+            </div>
+
+            <div>
+                <img src="image/Rectangle-3352-2-1024x444.png" alt="" width="500px">
+                <h4 class="mt-3"><a href="#">SLA BOOSTHER PROGRAM</a></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="last-bg">
+
+        <div id="last-container">
+            <div id="last-text">
+                <p>Subscribe To Our Newsletter</p>
+                <h3>Join SLA’s community of young, ambitious and vibrant women across Africa</h3>
+            </div>
+
+            <form id="last-in" action="">
+                <input type="text" placeholder="Your Email">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+
 
 
 
@@ -878,7 +978,9 @@
                 </div>
             </div>
 
-            <div id="leads"><p>© 2024 SHE LEADS AFRICA, All Rights Reserved.</p></div>
+            <div id="leads">
+                <p>© 2024 SHE LEADS AFRICA, All Rights Reserved.</p>
+            </div>
 
         </div>
     </footer>
