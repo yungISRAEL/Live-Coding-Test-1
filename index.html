@@ -66,6 +66,28 @@
             border-radius: 20px;
         }
 
+        #carouselExampleDark .carousel-item {
+            position: relative;
+        }
+
+        #carouselExampleDark .carousel-caption {
+            left: 8%;
+            right: 8%;
+            bottom: 14%;
+            margin-bottom: 0;
+            width: auto;
+            max-width: 900px;
+            transform: none;
+            padding: 0;
+            z-index: 2;
+        }
+
+        #text-her,
+        #text-the,
+        #text-spark {
+            margin-bottom: 0;
+        }
+
         #background-image {
             background-image: url(image/pattern-bg.jpg);
             background-position: center;
@@ -168,9 +190,18 @@
             width: 80px;
         }
 
+        #cards .card-img-top {
+            display: block;
+            margin-bottom: 10px;
+        }
+
         #cardd {
             border-radius: 20px;
             background-color: #EEEEEE;
+        }
+
+        #cardd .card-body {
+            padding-top: 10px;
         }
 
         #tv-container {
@@ -388,6 +419,13 @@
                 object-fit: cover;
             }
 
+            #carouselExampleDark .carousel-caption {
+                left: 6%;
+                right: 6%;
+                bottom: 12%;
+                max-width: none;
+            }
+
 
             #background-image {
                 height: auto;
@@ -571,17 +609,565 @@
             }
 
             .carousel-caption {
-                bottom: -30%;
-                left: 50%;
-                right: 50%;
-                transform: translate(-50%, 0);
+                bottom: 10%;
+                left: 6%;
+                right: 6%;
+                transform: none;
                 margin-bottom: 0;
-                width: 90%;
-                max-width: 480px;
+                width: auto;
+                max-width: none;
                 text-align: center;
                 padding: 10px;
             }
 
+        }
+
+       
+        @media (min-width: 1200px) {
+            #carouselExampleDark .carousel-caption {
+                bottom: 16%;
+            }
+
+            #card-container,
+            #cards,
+            #two-container {
+                padding-left: clamp(40px, 9vw, 180px);
+                padding-right: clamp(40px, 9vw, 180px);
+            }
+
+            #tv-container {
+                margin-left: clamp(40px, 9vw, 180px);
+                margin-right: clamp(40px, 9vw, 180px);
+            }
+
+            #set {
+                gap: 40px;
+                align-items: center;
+            }
+
+            #set img {
+                margin-left: 0;
+            }
+
+            #sla,
+            #the,
+            #slay {
+                width: 100%;
+                max-width: 640px;
+                margin-right: 0;
+            }
+
+            #conta {
+                padding-left: clamp(40px, 8vw, 160px);
+                padding-right: clamp(40px, 8vw, 160px);
+            }
+
+            #last-text p,
+            #last-text h3 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #last-in {
+                justify-content: center;
+                padding-left: 0;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199.98px) {
+            #carouselExampleDark .carousel-caption {
+                bottom: 13%;
+            }
+
+            #btn {
+                width: auto;
+                padding: 12px 20px;
+            }
+
+            .carousel-item img {
+                height: 70vh;
+                object-fit: cover;
+            }
+
+            #text-her,
+            #text-the,
+            #text-spark {
+                margin-bottom: 80px;
+            }
+
+            #text-her h5,
+            #text-the h5,
+            #text-spark h5 {
+                font-size: 1.5rem;
+            }
+
+            #text-her button,
+            #text-the button,
+            #text-spark button {
+                margin-right: 0;
+            }
+
+            #card-container,
+            #cards,
+            #two-container,
+            #conta {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+            #tv-container {
+                margin: 24px 32px;
+                text-align: center;
+            }
+
+            #tv-container img {
+                margin-left: 0;
+            }
+
+            #set {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            #set img {
+                margin-left: 0;
+                width: min(380px, 100%);
+            }
+
+            #sla,
+            #the,
+            #slay {
+                width: 100%;
+                max-width: 700px;
+                margin-right: 0;
+            }
+
+            #grid-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                padding-left: 0;
+                gap: 24px;
+            }
+
+            #leads {
+                padding-left: 0;
+            }
+
+            #last-bg {
+                height: auto;
+                padding: 56px 24px;
+            }
+
+            #last-container {
+                padding-top: 0;
+            }
+
+            #last-text p,
+            #last-text h3 {
+                width: 100%;
+                max-width: 620px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #last-in {
+                justify-content: center;
+                padding-left: 0;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            #carouselExampleDark .carousel-caption {
+                bottom: 10%;
+            }
+
+            #btn {
+                width: 100%;
+                padding: 12px 18px;
+            }
+
+            .carousel-item img {
+                height: 60vh;
+                object-fit: cover;
+            }
+
+            #text-her,
+            #text-the,
+            #text-spark {
+                margin-bottom: 36px;
+            }
+
+            #text-her h5,
+            #text-the h5,
+            #text-spark h5 {
+                font-size: 1.15rem;
+                text-align: center;
+            }
+
+            #text-her button,
+            #text-the button,
+            #text-spark button {
+                margin-right: 0;
+            }
+
+            #background-image {
+                height: auto;
+                padding: 32px 16px;
+            }
+
+            #head2 h2 {
+                font-size: 2rem;
+            }
+
+            #down,
+            #twoimg {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #card-container,
+            #cards,
+            #two-container,
+            #conta {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            #tv-container {
+                margin: 20px 16px;
+                padding: 16px;
+                text-align: center;
+            }
+
+            #tv-container img {
+                margin-left: 0;
+                width: 64px;
+            }
+
+            #start {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+
+            #start h2 {
+                font-size: 2rem;
+            }
+
+            #set {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+                margin-bottom: 56px;
+            }
+
+            #set img {
+                margin-left: 0;
+                width: min(320px, 100%);
+            }
+
+            #sla,
+            #the,
+            #slay {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            #alone {
+                margin-top: 0;
+                margin-left: 0;
+                text-align: center;
+                padding: 0 16px;
+            }
+
+            #grid-container {
+                grid-template-columns: 1fr;
+                padding-left: 0;
+                gap: 18px;
+                text-align: center;
+            }
+
+            #with img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            #leads {
+                padding-left: 0;
+                font-size: 0.9rem;
+            }
+
+            #last-bg {
+                height: auto;
+                padding: 44px 16px;
+            }
+
+            #last-container {
+                padding-top: 0;
+            }
+
+            #last-text p,
+            #last-text h3 {
+                width: 100%;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #last-text h3 {
+                font-size: 1.4rem;
+            }
+
+            #last-in {
+                padding-left: 0;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #last-in input {
+                width: 100%;
+                max-width: 360px;
+                padding: 10px 16px;
+            }
+        }
+
+        /* Dedicated responsiveness for new sections */
+        #two-container {
+            margin-top: 40px;
+        }
+
+        #twoimg {
+            gap: 24px;
+        }
+
+        #twoimg > div {
+            width: 100%;
+        }
+
+        #twoimg img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #last-container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        #last-text p,
+        #last-text h3 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #last-in {
+            justify-content: center;
+            padding-left: 0;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+       
+        @media (max-width: 575.98px) {
+            #two-container {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            #twoimg {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            #twoimg h4 {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            #last-bg {
+                height: auto;
+                padding: 36px 0;
+            }
+
+            #last-container {
+                padding-top: 0;
+            }
+
+            #last-text p {
+                max-width: 240px;
+                font-size: 0.9rem;
+            }
+
+            #last-text h3 {
+                width: 100%;
+                max-width: 320px;
+                font-size: 1.25rem;
+            }
+
+            #last-in {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #last-in input {
+                width: 100%;
+                max-width: 320px;
+                padding: 10px 14px;
+            }
+        }
+
+        
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            #two-container {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            #twoimg {
+                flex-direction: column;
+                gap: 22px;
+            }
+
+            #twoimg h4 {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+
+            #last-bg {
+                height: auto;
+                padding: 48px 0;
+            }
+
+            #last-container {
+                padding-top: 0;
+            }
+
+            #last-text p {
+                max-width: 280px;
+            }
+
+            #last-text h3 {
+                width: 100%;
+                max-width: 560px;
+                font-size: 1.6rem;
+            }
+
+            #last-in input {
+                width: min(100%, 460px);
+                padding: 10px 18px;
+            }
+        }
+
+       
+        @media (min-width: 992px) and (max-width: 1399.98px) {
+            #two-container {
+                padding-left: clamp(32px, 5vw, 80px);
+                padding-right: clamp(32px, 5vw, 80px);
+            }
+
+            #twoimg {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 24px;
+            }
+
+            #twoimg h4 {
+                font-size: 1.15rem;
+            }
+
+            #last-bg {
+                height: auto;
+                min-height: 420px;
+                padding: 60px 0;
+            }
+
+            #last-container {
+                padding-top: 0;
+                max-width: 900px;
+            }
+
+            #last-text h3 {
+                width: 100%;
+                max-width: 700px;
+                font-size: 1.9rem;
+            }
+
+            #last-in input {
+                width: min(100%, 520px);
+                padding: 10px 26px;
+            }
+        }
+
+        
+        @media (min-width: 1400px) {
+            #two-container {
+                padding-left: clamp(120px, 16vw, 260px);
+                padding-right: clamp(120px, 16vw, 260px);
+            }
+
+            #twoimg {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 28px;
+            }
+
+            #last-bg {
+                min-height: 460px;
+                height: auto;
+                padding: 70px 0;
+            }
+
+            #last-container {
+                padding-top: 0;
+                max-width: 1040px;
+            }
+
+            #last-text p {
+                max-width: 320px;
+            }
+
+            #last-text h3 {
+                width: 100%;
+                max-width: 760px;
+                font-size: 2rem;
+            }
+
+            #last-in input {
+                width: min(100%, 560px);
+                padding: 10px 30px;
+            }
+        }
+
+       
+        @media (max-width: 575.98px) {
+            #footer-bg {
+                height: auto;
+                min-height: 760px;
+                padding-bottom: 28px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            #footer-bg {
+                height: auto;
+                min-height: 620px;
+                padding-bottom: 24px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1024px) {
+            #footer-bg {
+                height: auto;
+                min-height: 520px;
+                padding-bottom: 22px;
+            }
         }
     </style>
 </head>
